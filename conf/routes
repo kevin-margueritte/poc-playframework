@@ -1,0 +1,10 @@
+#Routes - Owners
+#~~~~~~~~~
+
+GET     /api/owner/:ownerId/cats          controllers.OwnersController.cats(ownerId: utils.OwnerId)
+
+#Routes - Cats
+#~~~~~~~~~
+
+GET     /api/cat/:id                      controllers.CatsController.get(id: CatId)
+POST    /api/cats                         controllers.CatsController.create()
